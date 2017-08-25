@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hangman Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h3>Hang Man</h3>
+    <p>You have {{guessCount}} guesses left.</p>
+  </div>
+  <div class="main">
+    <div class="success">
+      {{#gameWord}}
+      {{/gameWord}}
+    </div>
+    <div class="entry">
+      <form action="/" method="post">
+        <input type="text" name="letter" value="" placeholder="Guess a letter">
+        <button type="submit" name="check">Check Letter</button>
+      </form>
+    </div>
+    <div class="wrong">
+      Letters guessed: {{guessedLetter}}
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

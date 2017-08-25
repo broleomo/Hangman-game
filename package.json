@@ -1,0 +1,19 @@
+{
+  "name": "Hangman-Game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express-session": "^1.15.5",
+    "express-validator": "^3.2.1",
+    "mustache-express": "^1.2.5",
+    "sessions": "0.0.2-7"
+  }
+}
